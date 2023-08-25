@@ -9,9 +9,11 @@ interface NavProps {
 
 const Nav = (props: NavProps) => {
     return(
-        <div style={{ paddingBottom: 10 }}>
-            <Button text={"Home"} onClick={() => props.contentDispatch(Home())} />
-            <Button text={"Test Page"} onClick={() => props.contentDispatch(TestPage())} />
+        <div style={{ paddingBottom: 10, borderBottom: "solid" }}>
+            <ul style={{ listStyleType: "none", display: "inline", padding: 0 }}>
+                <li style={{ display: "inline" }}><Button text={"Home"} onClick={() => props.contentDispatch(Home())} /></li>
+                <li style={{ display: "inline" }}><Button text={"Test Page"} onClick={() => props.contentDispatch(TestPage())} /></li>
+            </ul>
         </div>
     )
 };

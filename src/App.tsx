@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
+import './styles.css';
 import Nav from "./Nav";
 import Home from "./Home";
-import Content from "./Content";
 
 const App = () => {
     const [content, setContent] = useState(Home());
@@ -10,7 +10,7 @@ const App = () => {
         <div style={{padding: 20}}>
             <Nav contentDispatch={setContent} />
             <div>
-                <Content content={content} />
+                {content}
             </div>
         </div>
     )

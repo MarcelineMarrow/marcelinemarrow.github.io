@@ -2,7 +2,10 @@ import React from "react";
 
 const TestPage = () => {
     return (
-        <div>Lorem Ipsum...</div>
+        <div>
+            <h1>Test Page</h1>
+            <p>Lorem Ipsum...</p>
+        </div>
     )
 };
 

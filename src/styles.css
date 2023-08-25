@@ -1,0 +1,35 @@
+html {
+    background-color: lightslategray;
+}
+
+html * {
+    font-family: "Segoe Script", cursive;
+}
+
+.button {
+    background-color: white;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 5px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    transition: background-color .3s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.button:hover {
+    background-color: #bbbbff;
+    transition: background-color .3s;
+}
